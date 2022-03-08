@@ -1,0 +1,43 @@
+encoding: utf-8
+
+# SEO
+title: 小阿针
+description: 小阿针的个人博客
+keywords: 小阿针,Blog,sddtc,JavaScript
+author: heartlesswildpointer
+footerText: 'Copyright © 2022'
+
+# theme
+permalink: /posts/:year/:month/:day/:title.html
+kramdown:
+  auto_ids: true
+  input: GFM
+  syntax_highlighter: rouge
+exclude: ['CNAME', 'README.md', 'LICENSE', '_site', 'dist', 'Gemfile', 'Gemfile.lock']
+
+# 域名配置
+# baseurl配置,如果网站部署在根目录下的其他目录中，请设置为 /目录名
+domainUrl: ''
+baseurl: ''
+
+# 菜单
+menu:
+  - title: 首页
+    url: /
+  - title: 归类
+    url: /pages/categories.html
+  - title: 搜索
+    url: /pages/search.html
+  - title: 关于
+    url: /pages/about.html
+  - title: 伙伴
+    url: /pages/friends.html
+
+# 点击页面文字冒出特效,不需要请设置为false
+extClickEffect: true
+
+plugins:
+  - jekyll-feed
+
+feed:
+  path: /static/xml/rss.xml
